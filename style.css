@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
