@@ -1,10 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid green; */
 }
 
-.hero-container {
+/* Utility classes */
+.pt-32 {
+  padding-top: 32px;
+}
+
+.hero {
+  position: relative;
   background: rgb(2, 0, 36);
-  background: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  padding-top: 50px;
+  border-bottom-left-radius: 120px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  height: 250%;
+  top: -300px;
+  left: -350px;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.logo-img {
+  height: 32px;
+}
+
+.menu-icon {
+  height: 24px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 70px;
+  padding-bottom: 160px;
+}
+
+.hero-content > h1 {
+  font-size: 32px;
+  font-family: "Overpass", sans-serif;
+  max-width: 320px;
+  margin: auto;
+  padding: 0 16px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.hero-content > p {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  max-width: 320px;
+  margin: auto;
+  padding: 0 16px;
+  opacity: 0.7;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  max-width: 320px;
+  margin: auto;
+  margin-top: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: 1px white solid;
+  border-radius: 30px;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background-color: white;
+  color: hsl(13, 100%, 72%);
+}
+.primary-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(243, 243, 243, 0.207);
+  border-color: rgba(243, 243, 243, 0.207);
+  transition: 0.2s;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+}
+.secondary-btn:hover {
+  background-color: white;
+  color: hsl(13, 100%, 72%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Section-2 | Designed for the furture */
+.c2 {
+  text-align: center;
+  /* padding: 16px; */
+}
+
+.c2-title {
+  padding-top: 96px;
+  padding-bottom: 48px;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  color: hsl(208, 49%, 24%);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.c2-image {
+  width: 100%;
+}
+
+.c2-image > img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.c2-content {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 64px;
+}
+
+.c2-content > .title {
+  font-size: 26px;
+  width: 280px;
+  margin: 0 auto;
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+}
+
+.c2-content > .description {
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  margin: 0 auto;
+  color: hsl(207, 13%, 34%);
+  opacity: 0.9;
 }
